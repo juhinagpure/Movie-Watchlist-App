@@ -73,7 +73,7 @@ const HomePage = () => {
 
         <form
           onSubmit={handleSearch}
-          className="mt-20 w-full max-w-2xl mx-auto flex items-center"
+          className="mt-10 w-full max-w-2xl mx-auto flex items-center"
         >
           <input
             type="text"
@@ -91,8 +91,8 @@ const HomePage = () => {
         </form>
 
         {recentMovies.length > 0 && (
-          <div className="mt-20 w-full">
-            <h2 className="text-2xl font-semibold mb-4 text-center">
+          <div className="mt-10 w-full">
+            <h2 className="text-2xl font-semibold mb-2 text-center">
               Recently Viewed Movies
             </h2>
             <div className="flex flex-wrap justify-center gap-2">

@@ -31,7 +31,7 @@ const LoginPage = () => {
   }, [currentUser, navigate]);
 
   return (
-    <div className="mx-auto max-w-md rounded-xl border px-4 py-20 text-gray-700 shadow-lg sm:px-8">
+    <div className="mx-auto max-w-md rounded-xl mt-36 border px-4 py-20 text-gray-700 shadow-lg sm:px-8">
       <p className="mb-5 text-2xl font-medium text-center">
         Login To Explore Movies!
       </p>
@@ -56,7 +56,7 @@ const LoginPage = () => {
       </button>
       <div className="flex justify-center">
         <span>
-          Don't Have An Account?
+          Dont Have An Account?
           <Link to="/signup" className="ml-2 text-blue-600 hover:underline">
             Sign Up
           </Link>
