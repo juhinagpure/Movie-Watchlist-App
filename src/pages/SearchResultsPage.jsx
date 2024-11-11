@@ -10,7 +10,7 @@ import {
 const SearchResults = () => {
   const { query } = useParams();
   const [movies, setMovies] = useState([]);
-  const [loading, setLoading] = useState(true); // Set loading state
+  const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [newWatchlistName, setNewWatchlistName] = useState("");
   const [selectedMovie, setSelectedMovie] = useState(null);
@@ -22,7 +22,7 @@ const SearchResults = () => {
   );
 
   useEffect(() => {
-    setLoading(true); // Start loading when the component is mounted or query changes
+    setLoading(true);
     fetch(
       `https://www.omdbapi.com/?s=${query}&apikey=${
         import.meta.env.VITE_API_KEY

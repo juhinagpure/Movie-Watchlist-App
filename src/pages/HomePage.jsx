@@ -29,7 +29,6 @@ const HomePage = () => {
 
   return (
     <div className="flex">
-      {/* Sidebar for watchlists */}
       <div
         className={`fixed inset-0 z-30 transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
@@ -69,7 +68,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Overlay for mobile sidebar */}
       {isSidebarOpen && (
         <div
           className="fixed inset-0 bg-black opacity-50 z-20 lg:hidden"
@@ -77,7 +75,6 @@ const HomePage = () => {
         ></div>
       )}
 
-      {/* Main Content */}
       <div className="flex flex-col items-center px-10 pt-10 w-full lg:w-5/6 lg:ml-auto">
         <header className="w-full">
           <button
@@ -89,7 +86,6 @@ const HomePage = () => {
           <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center">
             Welcome to Your Movie Watchlist
           </h1>
-          {/* Toggle Sidebar Icon for mobile */}
         </header>
 
         <p className="text-md md:text-xl lg:text-2xl text-center mt-4 lg:mt-6">

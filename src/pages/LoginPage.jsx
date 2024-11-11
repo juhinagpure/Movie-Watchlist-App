@@ -23,7 +23,6 @@ const LoginPage = () => {
   };
 
   useEffect(() => {
-    // Adding console.log to debug if useEffect is running
     console.log("useEffect running with currentUser:", currentUser);
     if (currentUser) {
       navigate("/");
