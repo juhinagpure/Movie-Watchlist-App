@@ -1,24 +1,22 @@
 // App.js
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage';
-import MoviePage from './pages/MoviePage';
-import ProtectedRoute from './components/ProtectedRoute';
-import SignUp from './pages/SignUp';
-import SearchResults from './pages/SearchResultsPage';
-import WatchlistPage from './pages/WatchlistPage';
-import TestSignup2 from './pages/TestSignup2';
-import TestSignUp from './pages/TestSignUp';
+
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import ProtectedRoute from "./components/ProtectedRoute";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import MoviePage from "./pages/MoviePage";
+import SearchResults from "./pages/SearchResultsPage";
+import SignUp from "./pages/SignUp";
+import WatchlistPage from "./pages/WatchlistPage";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
-        <Route path='/signup' element={<SignUp />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/watchlist/:listName" element={<WatchlistPage />} />
-        <Route path="/test-signup" element={<TestSignUp />}/>
+
         <Route
           path="/"
           element={
@@ -27,12 +25,22 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="/search-results/:query" element={
-          <ProtectedRoute>
-          <SearchResults />
-        </ProtectedRoute>
-        } />
-        <Route path="/movie/:imdbID" element={<ProtectedRoute><MoviePage /></ProtectedRoute>} />
+        <Route
+          path="/search-results/:query"
+          element={
+            <ProtectedRoute>
+              <SearchResults />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/movie/:imdbID"
+          element={
+            <ProtectedRoute>
+              <MoviePage />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </Router>
   );

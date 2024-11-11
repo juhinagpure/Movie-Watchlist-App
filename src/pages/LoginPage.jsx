@@ -31,7 +31,7 @@ const LoginPage = () => {
   }, [currentUser, navigate]);
 
   return (
-    <div className="mt-48 mx-auto max-w-md rounded-xl border px-4 py-20 text-gray-700 shadow-lg sm:px-8">
+    <div className="mt-40 mx-auto max-w-md rounded-xl border px-4 py-20 text-gray-700 shadow-lg sm:px-8">
       <p className="mb-5 text-2xl font-medium text-center">
         Login To Explore Movies!
       </p>
