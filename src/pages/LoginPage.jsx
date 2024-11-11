@@ -56,7 +56,7 @@ const LoginPage = () => {
       </button>
       <div className="flex justify-center">
         <span>
-          Don't Have An Account?
+          Don&apos;t Have An Account?
           <Link to="/signup" className="ml-2 text-blue-600 hover:underline">
             Sign Up
           </Link>
