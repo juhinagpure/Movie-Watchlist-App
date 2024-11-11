@@ -91,7 +91,7 @@ const MoviePage = () => {
     return (
       <div className="flex items-center justify-center h-screen">
         <motion.div
-          className="w-12 h-12 border-4 border-dashed rounded-full border-blue-500"
+          className="w-12 h-12 bg-blue-500"
           animate={{ rotate: 360 }}
           transition={{
             repeat: Infinity,
@@ -102,7 +102,6 @@ const MoviePage = () => {
       </div>
     );
   };
-
   if (!movie) return <Loader />;
 
   return (

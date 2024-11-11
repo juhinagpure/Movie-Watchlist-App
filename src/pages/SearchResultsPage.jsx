@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import Loader from "../components/Loader";
 import {
   addToWatchlist,
   createWatchlist,
@@ -93,7 +92,7 @@ const SearchResults = () => {
 
       {loading ? (
         <div className="flex justify-center items-center h-screen">
-          <Loader />
+          <div className="w-16 h-16 border-t-4 border-blue-500 border-solid rounded-full animate-spin"></div>
         </div>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
