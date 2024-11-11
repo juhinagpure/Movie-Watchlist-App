@@ -109,7 +109,7 @@ const HomePage = () => {
           />
           <button
             type="submit"
-            className="bg-blue-600 text-white px-4 py-2 rounded-r-lg"
+            className="bg-blue-600 text-white px-4 py-2 rounded-r-lg ml-3"
           >
             Search
           </button>
